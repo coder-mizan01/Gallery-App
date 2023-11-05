@@ -1,4 +1,5 @@
 export const draggableImages = [
+
   <img src="image-1.webp" draggable="true" alt="pic" />,
   <img src="image-2.webp" draggable="true" alt="pic" />,
   <img src="image-3.webp" draggable="true" alt="pic" />,
@@ -10,4 +11,5 @@ export const draggableImages = [
   <img src="image-9.jpg" draggable="true" alt="pic" />,
   <img src="image-10.webp" draggable="true" alt="pic" />,
   <img src="image-11.webp" draggable="true" alt="pic" />,
+
 ];
