@@ -1,0 +1,165 @@
+
+.Gallery{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,auto);
+  grid-gap:30px;
+  border-radius: 5px;
+  width: 90%;
+  margin: 10px auto;
+  padding: 0.5rem 2rem 2rem;
+  background-color: #FFFFFF;
+
+  @media (max-width:768px) {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    width:85%;
+  };
+
+  @media (max-width:500px) {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,auto);
+    width: 80%;
+  }
+  }
+  
+  
+  
+  .Gallery .header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    grid-column: 1/-1;
+    margin-inline-start: -2em;
+    margin-inline-end: -2em;
+
+   
+  }
+
+  .Gallery .header>p {
+    margin: 15px 45px 15px 45px;
+  }
+
+  .Gallery .header p:last-child{
+    color: red;
+    font-weight: 500;
+    cursor: pointer;
+
+  }
+
+
+
+  
+  .draggable{
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    z-index: 2;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .draggable:last-child{
+    grid-column: 1/3;
+    grid-row: 2/4;
+   @media (max-width:768px){
+
+    }
+  }
+  
+  .draggable input{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 11px;
+    left: 15px;
+    margin: 0px;
+    outline: none;
+
+  }
+  
+  .draggable:hover{
+    background-color: rgba(0,0,0, 0.8);
+  }
+  
+  .draggable:hover >input{
+    display: block;
+  }
+  
+  
+  .draggable img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition:0.3s ;
+    z-index: 2;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-radius: 5px;
+
+  }
+
+  .checked{
+    opacity: 0.4;
+  }
+  
+  
+  .draggable img:hover{
+    opacity: 0.6;
+  }
+
+  
+  
+  .draggable.dragover{
+    border: 1px dotted black;
+  }
+  
+  .draggable .check{
+    display: none;
+  }
+  
+  .draggable.dragging{
+    opacity: .5;
+  }
+  
+  .draggable.border{
+    border: 2px dotted black;
+  }
+  
+
+
+
+  /*
+  .container div:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    outline: none;
+    overflow: hidden;
+    font-size: 0px;
+    background-color: #ECEFF6;
+    border: 1px dotted black;
+    
+  }
+  
+  .container div:last-child form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    user-select: none;
+  }
+  
+  
+  .container div:last-child form input{
+    display: block;
+    width: 99px;
+    margin: 0px 0px 0px 0px;
+    border: none;
+  }
+  */
