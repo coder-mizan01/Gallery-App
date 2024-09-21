@@ -3,7 +3,7 @@
 A simple web application for managing and displaying a gallery of images with drag-and-drop functionality, image selection, and deletion. This application is built using React.
 
 ##Live At
-https://harmonious-eclair-4170d8.netlify.app
+https://drag-drop-gallery-app.netlify.app/
 
 ## Features
 
